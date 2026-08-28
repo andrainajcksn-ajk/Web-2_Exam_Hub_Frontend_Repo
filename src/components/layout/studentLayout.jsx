@@ -19,7 +19,7 @@ export default function StudentLayout() {
     <div className="min-h-screen bg-neutral-950">
       <header className="border-b border-neutral-800">
         <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="text-xl font-extrabold">Exam<span className="text-brand-500">Hub</span></div>
+          <img src="/logo-page.png" alt="ExamHub" className="h-30 mb-4" />
           <nav className="flex items-center gap-2">
             {links.map((l) => (
               <NavLink
