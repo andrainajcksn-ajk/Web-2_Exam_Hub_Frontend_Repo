@@ -1,20 +1,20 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { AuthProvider } from './context/AuthContext';
-import ProtectedRoute from './components/common/ProtectedRoute';
-import AuthLayout from './components/layout/AuthLayout';
-import AdminLayout from './components/layout/AdminLayout';
-import StudentLayout from './components/layout/StudentLayout';
-import Login from './pages/Login';
-import Dashboard from './pages/admin/Dashboard';
-import Students from './pages/admin/Students';
-import Courses from './pages/admin/Courses';
-import Exams from './pages/admin/Exams';
-import ExamQuestions from './pages/admin/ExamQuestions';
-import ExamResults from './pages/admin/ExamResults';
-import AvailableExams from './pages/student/AvailableExams';
-import TakeExam from './pages/student/TakeExam';
-import ExamResult from './pages/student/ExamResult';
-import MyResults from './pages/student/MyResults';
+import { AuthProvider } from './context/authContext';
+import ProtectedRoute from './components/common/protectedRoute';
+import AuthLayout from './components/layout/authLayout';
+import AdminLayout from './components/layout/adminLayout';
+import StudentLayout from './components/layout/studentLayout';
+import Login from './pages/login';
+import Dashboard from './pages/admin/dashboard';
+import Students from './pages/admin/students';
+import Courses from './pages/admin/courses';
+import Exams from './pages/admin/exams';
+import ExamQuestions from './pages/admin/examQuestion';
+import ExamResults from './pages/admin/examResults';
+import AvailableExams from './pages/student/availableExams';
+import TakeExam from './pages/student/takeExam';
+import ExamResult from './pages/student/examResult';
+import MyResults from './pages/student/myResults';
 
 export default function App() {
   return (
