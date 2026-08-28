@@ -20,7 +20,7 @@ export default function AdminLayout() {
   return (
     <div className="min-h-screen flex bg-neutral-950">
       <aside className="w-64 border-r border-neutral-800 p-4 flex flex-col">
-        <div className="text-xl font-extrabold mb-8 px-2">Exam<span className="text-brand-500">Hub</span></div>
+       <img src="/logo-page.png" alt="ExamHub" className="h-30 mb-4" />
         <nav className="flex-1 space-y-1">
           {links.map((l) => (
             <NavLink
