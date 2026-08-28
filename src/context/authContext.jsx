@@ -1,6 +1,6 @@
 import { createContext, useCallback, useState } from "react";
 import * as authApi from "../api/authApi";
-import { clearToken, getToken } from "../api/client";
+import { clearToken } from "../api/client";
 export const AuthContext = createContext({
   user: null,
   loading: true,
