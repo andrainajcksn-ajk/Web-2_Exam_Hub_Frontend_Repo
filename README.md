@@ -2,7 +2,7 @@
 cd exam-hub-frontend
 npm install
 npm install react-router-dom
-npm install -D tailwindcss autoprefixer
+npm install -D @tailwindcss/postcss tailwindcss autoprefixer
 npm run dev
 
 ## Comptes de test
