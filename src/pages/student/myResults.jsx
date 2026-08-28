@@ -28,7 +28,7 @@ export default function MyResults() {
       ) : (
         <Table headers={["Examen", "Cours", "Note", "Soumis le"]}>
           {results.map((r) => (
-            <tr key={r.exam_id}>
+            <tr key={`${r.exam_id}-${i}`}>
               <td className="px-4 py-3 font-medium">{r.title}</td>
               <td className="px-4 py-3 text-brand-500">{r.course_code}</td>
               <td className="px-4 py-3">
