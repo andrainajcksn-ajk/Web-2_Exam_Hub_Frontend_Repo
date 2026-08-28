@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+@theme {
+--color-brand-50: #fff7ed;
+--color-brand-100: #ffedd5;
+--color-brand-200: #fed7aa;
+--color-brand-300: #fdba74;
+--color-brand-400: #fb923c;
+--color-brand-500: #ec8b18;
+--color-brand-600: #d97e12;
+--color-brand-700: #b9680c;
+}
 body {
   @apply bg-neutral-950 text-neutral-100;
 }
