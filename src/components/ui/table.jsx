@@ -1,4 +1,4 @@
-export default function Table({ headers, children }) {
+const Table = ({ headers, children }) => {
   return (
     <div className="overflow-x-auto">
       <table className="w-full text-sm">
@@ -14,3 +14,4 @@ export default function Table({ headers, children }) {
     </div>
   );
 }
+export default Table;

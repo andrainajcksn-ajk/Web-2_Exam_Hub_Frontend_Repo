@@ -1,7 +1,7 @@
 import Modal from './modal';
 import Button from './button';
 
-export default function ConfirmDialog({ open, onClose, onConfirm, message }) {
+const ConfirmDialog = ({ open, onClose, onConfirm, message }) => {
   return (
     <Modal open={open} onClose={onClose} title="Confirmation">
       <p className="mb-6 text-neutral-300">{message}</p>
@@ -12,3 +12,4 @@ export default function ConfirmDialog({ open, onClose, onConfirm, message }) {
     </Modal>
   );
 }
+export default ConfirmDialog;

@@ -1,4 +1,4 @@
-export default function Button({ children, variant = 'primary', className = '', ...props }) {
+const Button = ({ children, variant = 'primary', className = '', ...props }) => {
   const styles = {
     primary: 'bg-brand-600 hover:bg-brand-500 text-white',
     secondary: 'bg-neutral-800 hover:bg-neutral-700 text-neutral-100 border border-neutral-700',
@@ -14,3 +14,4 @@ export default function Button({ children, variant = 'primary', className = '', 
     </button>
   );
 }
+export default Button;

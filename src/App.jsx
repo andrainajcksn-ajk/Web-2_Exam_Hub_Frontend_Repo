@@ -16,7 +16,7 @@ import TakeExam from './pages/student/takeExam';
 import ExamResult from './pages/student/examResult';
 import MyResults from './pages/student/myResults';
 
-export default function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <AuthProvider>
@@ -60,4 +60,6 @@ export default function App() {
       </AuthProvider>
     </BrowserRouter>
   );
-}
+};
+
+export default App;

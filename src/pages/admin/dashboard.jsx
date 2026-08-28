@@ -5,7 +5,7 @@ import { listCourses } from "../../api/coursesApi";
 import { listExams } from "../../api/examsApi";
 import Spinner from "../../components/ui/spinner";
 
-export default function Dashboard() {
+const Dashboard = () => {
   const [data, setData] = useState({
     students: 0,
     courses: 0,
@@ -65,4 +65,5 @@ export default function Dashboard() {
       </div>
     </div>
   );
-}
+};
+export default Dashboard;

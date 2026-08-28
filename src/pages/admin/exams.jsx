@@ -21,14 +21,14 @@ const empty = {
   ends_at: "",
 };
 
-function toLocalInput(date) {
+const toLocalInput = (date) => {
   if (!date) return "";
   const d = new Date(date);
   const pad = (n) => String(n).padStart(2, "0");
   return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`;
-}
+};
 
-export default function Exams() {
+const Exams = () => {
   const navigate = useNavigate();
   const [exams, setExams] = useState([]);
   const [courses, setCourses] = useState([]);
@@ -231,4 +231,5 @@ export default function Exams() {
       />
     </div>
   );
-}
+};
+export default Exams;

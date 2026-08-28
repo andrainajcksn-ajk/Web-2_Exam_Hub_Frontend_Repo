@@ -3,27 +3,27 @@ import { API_URL } from "../utils/constants";
 const TOKEN_KEY = "examhub_token";
 const USER_KEY = "examhub_user";
 
-export function getToken() {
+export const getToken = () => {
   return localStorage.getItem(TOKEN_KEY);
-}
+};
 
-export function setToken(token) {
+export const setToken = (token) => {
   localStorage.setItem(TOKEN_KEY, token);
-}
+};
 
-export function clearToken() {
+export const clearToken = () => {
   localStorage.removeItem(TOKEN_KEY);
-}
+};
 
-export function clearSession() {
+export const clearSession = () => {
   localStorage.removeItem(TOKEN_KEY);
   localStorage.removeItem(USER_KEY);
   if (!window.location.pathname.startsWith("/login")) {
     window.location.href = "/login";
   }
-}
+};
 
-export async function request(path, { method = "GET", body } = {}) {
+export const request = async (path, { method = "GET", body } = {}) => {
   const headers = { "Content-Type": "application/json" };
   const token = getToken();
   if (token) headers.Authorization = `Bearer ${token}`;
@@ -50,4 +50,4 @@ export async function request(path, { method = "GET", body } = {}) {
   }
 
   return data;
-}
+};

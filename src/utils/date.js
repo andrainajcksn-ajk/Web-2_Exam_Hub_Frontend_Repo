@@ -1,4 +1,4 @@
-export function formatDate(value) {
+export const formatDate = (value) => {
   if (!value) return '-';
   return new Date(value).toLocaleString('fr-FR', {
     day: '2-digit',
@@ -7,4 +7,4 @@ export function formatDate(value) {
     hour: '2-digit',
     minute: '2-digit',
   });
-}
+};

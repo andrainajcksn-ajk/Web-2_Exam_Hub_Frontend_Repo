@@ -1,4 +1,4 @@
-export default function Badge({ children, color = 'neutral' }) {
+const Badge = ({ children, color = 'neutral' }) => {
   const colors = {
     neutral: 'bg-neutral-800 text-neutral-300',
     green: 'bg-green-900/50 text-green-300',
@@ -7,3 +7,4 @@ export default function Badge({ children, color = 'neutral' }) {
   };
   return <span className={`inline-block px-2 py-0.5 rounded-full text-xs font-medium ${colors[color]}`}>{children}</span>;
 }
+export default Badge;

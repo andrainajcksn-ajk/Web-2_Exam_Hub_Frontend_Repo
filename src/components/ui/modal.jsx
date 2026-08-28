@@ -1,4 +1,4 @@
-export default function Modal({ open, onClose, title, children }) {
+const Modal = ({ open, onClose, title, children }) => {
   if (!open) return null;
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4" onClick={onClose}>
@@ -12,3 +12,4 @@ export default function Modal({ open, onClose, title, children }) {
     </div>
   );
 }
+export default Modal;

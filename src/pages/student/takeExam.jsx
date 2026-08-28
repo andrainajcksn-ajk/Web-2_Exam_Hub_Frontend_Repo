@@ -7,7 +7,7 @@ import Spinner from "../../components/ui/spinner";
 import Badge from "../../components/ui/badge";
 import ConfirmDialog from "../../components/ui/confirmDialog";
 
-export default function TakeExam() {
+const TakeExam = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [exam, setExam] = useState(null);
@@ -111,4 +111,5 @@ export default function TakeExam() {
       />
     </div>
   );
-}
+};
+export default TakeExam;

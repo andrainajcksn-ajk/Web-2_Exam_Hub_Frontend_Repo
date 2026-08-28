@@ -5,7 +5,7 @@ import Badge from "../../components/ui/badge";
 import Spinner from "../../components/ui/spinner";
 import { formatDate } from "../../utils/date";
 
-export default function MyResults() {
+const MyResults = () => {
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -45,4 +45,5 @@ export default function MyResults() {
       )}
     </div>
   );
-}
+};
+export default MyResults;

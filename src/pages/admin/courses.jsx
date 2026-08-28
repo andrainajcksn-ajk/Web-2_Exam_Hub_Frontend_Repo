@@ -11,7 +11,7 @@ import Spinner from "../../components/ui/spinner";
 
 const empty = { code: "", name: "", description: "" };
 
-export default function Courses() {
+const Courses = () => {
   const [courses, setCourses] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -143,4 +143,5 @@ export default function Courses() {
       />
     </div>
   );
-}
+};
+export default Courses;

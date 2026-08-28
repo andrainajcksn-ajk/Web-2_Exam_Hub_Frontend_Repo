@@ -8,7 +8,7 @@ const links = [
   { to: '/admin/exams', label: 'Examens' },
 ];
 
-export default function AdminLayout() {
+const AdminLayout = () => {
   const { logout } = useAuth();
   const navigate = useNavigate();
 
@@ -45,3 +45,4 @@ export default function AdminLayout() {
     </div>
   );
 }
+export default AdminLayout;

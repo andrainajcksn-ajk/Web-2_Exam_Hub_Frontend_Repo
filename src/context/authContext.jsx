@@ -8,7 +8,7 @@ export const AuthContext = createContext({
   logout: () => {},
 });
 
-export function AuthProvider({ children }) {
+export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(() => authApi.getStoredUser());
   const [loading, setLoading] = useState(false);
 
@@ -29,4 +29,4 @@ export function AuthProvider({ children }) {
       {children}
     </AuthContext.Provider>
   );
-}
+};

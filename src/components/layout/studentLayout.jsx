@@ -6,7 +6,7 @@ const links = [
   { to: '/student/results', label: 'Mes résultats' },
 ];
 
-export default function StudentLayout() {
+const StudentLayout = () => {
   const { logout, user } = useAuth();
   const navigate = useNavigate();
 
@@ -46,3 +46,4 @@ export default function StudentLayout() {
     </div>
   );
 }
+export default StudentLayout;

@@ -12,7 +12,7 @@ import { formatDate } from "../../utils/date";
 
 const empty = { name: "", email: "", password: "" };
 
-export default function Students() {
+const Students = () => {
   const [students, setStudents] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -182,4 +182,5 @@ export default function Students() {
       />
     </div>
   );
-}
+};
+export default Students;

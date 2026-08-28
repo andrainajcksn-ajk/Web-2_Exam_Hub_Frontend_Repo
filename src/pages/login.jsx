@@ -5,7 +5,7 @@ import Input from '../components/ui/input';
 import Button from '../components/ui/button';
 import Alert from '../components/ui/alert';
 
-export default function Login() {
+const Login = () => {
   const { login } = useAuth();
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
@@ -55,4 +55,5 @@ export default function Login() {
       </div>
     </form>
   );
-}
+};
+export default Login;

@@ -1,4 +1,4 @@
-export default function Input({ label, className = '', ...props }) {
+const Input = ({ label, className = '', ...props }) => {
   return (
     <div>
       {label && <label className="block text-sm text-neutral-400 mb-1">{label}</label>}
@@ -9,3 +9,4 @@ export default function Input({ label, className = '', ...props }) {
     </div>
   );
 }
+export default Input;

@@ -10,14 +10,14 @@ import Badge from "../../components/ui/badge";
 import ConfirmDialog from "../../components/ui/confirmDialog";
 import Spinner from "../../components/ui/spinner";
 
-function emptyChoices() {
+const emptyChoices = () => {
   return [
     { text: "", is_correct: true },
     { text: "", is_correct: false },
   ];
-}
+};
 
-function QuestionForm({ initial, onSubmit, locked }) {
+const QuestionForm = ({ initial, onSubmit, locked }) => {
   const [statement, setStatement] = useState(initial?.statement || "");
   const [points, setPoints] = useState(initial?.points || 1);
   const [choices, setChoices] = useState(
@@ -114,9 +114,9 @@ function QuestionForm({ initial, onSubmit, locked }) {
       </div>
     </form>
   );
-}
+};
 
-export default function ExamQuestions() {
+const ExamQuestions = () => {
   const { id } = useParams();
   const [exam, setExam] = useState(null);
   const [questions, setQuestions] = useState([]);
@@ -271,4 +271,5 @@ export default function ExamQuestions() {
       />
     </div>
   );
-}
+};
+export default ExamQuestions;

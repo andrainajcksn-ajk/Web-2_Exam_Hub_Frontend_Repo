@@ -6,7 +6,7 @@ import Badge from "../../components/ui/badge";
 import Spinner from "../../components/ui/spinner";
 import { formatDate } from "../../utils/date";
 
-export default function ExamResults() {
+const ExamResults = () => {
   const { id } = useParams();
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -75,4 +75,5 @@ export default function ExamResults() {
       )}
     </div>
   );
-}
+};
+export default ExamResults;

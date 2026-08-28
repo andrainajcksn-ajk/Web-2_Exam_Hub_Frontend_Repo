@@ -1,6 +1,6 @@
 import { useLocation, Link } from "react-router-dom";
 
-export default function ExamResult() {
+const ExamResult = () => {
   const { state } = useLocation();
   const result = state?.result;
 
@@ -70,4 +70,5 @@ export default function ExamResult() {
       </div>
     </div>
   );
-}
+};
+export default ExamResult;

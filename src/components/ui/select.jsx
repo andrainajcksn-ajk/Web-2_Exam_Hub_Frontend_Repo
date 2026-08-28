@@ -1,4 +1,4 @@
-export default function Select({ label, options = [], className = '', ...props }) {
+const Select = ({ label, options = [], className = '', ...props }) => {
   return (
     <div>
       {label && <label className="block text-sm text-neutral-400 mb-1">{label}</label>}
@@ -15,3 +15,4 @@ export default function Select({ label, options = [], className = '', ...props }
     </div>
   );
 }
+export default Select;

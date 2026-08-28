@@ -6,7 +6,7 @@ import Badge from "../../components/ui/badge";
 import Spinner from "../../components/ui/spinner";
 import { formatDate } from "../../utils/date";
 
-export default function AvailableExams() {
+const AvailableExams = () => {
   const [exams, setExams] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -54,4 +54,5 @@ export default function AvailableExams() {
       )}
     </div>
   );
-}
+};
+export default AvailableExams;
